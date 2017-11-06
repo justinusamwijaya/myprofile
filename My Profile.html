@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link rel="stylesheet" 
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+    crossorigin="anonymous">
+
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+<script 
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" 
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" 
+    crossorigin="anonymous"></script>
+
+
+</script>
+<style>
+
+    body{
+        background-color:black;
+    }
+    .container{
+        background-color:white;
+    }
+
+nav.fill ul li a {
+  position: relative;
+}
+
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+nav.fill ul li a:hover {
+  color: #fff;
+  z-index: 1;
+}
+nav.fill ul li a:hover:after {
+  z-index: -10;
+  animation: fill 1s forwards;
+  -webkit-animation: fill 1s forwards;
+  -moz-animation: fill 1s forwards;
+  opacity: 1;
+}
+#pengalaman, ul, li{
+    list-style:none;
+
+}
+
+.nav-pills li a{
+      border-radius:0px;
+      color:black;
+
+  }
+  .nav-pills li.active a{
+  background-color:black;
+  width:200px;
+  }
+  .nav-pills li.active a:hover{
+  background-color:black;
+  width:200px;
+  }
+  .container{
+      width:850px;
+  }
+  .smol{
+      font-size:12px;
+  }
+</style>
+</head>
+<body data-spy="scroll" data-target="#scrollnye">
+
+    <div class="container" >
+        <div class="row" >
+                <!-- menu -->
+            <nav class="col-sm-3 hidden-xs fill" id="scrollnye"style="margin-top:25px;">
+                <div class="affix">
+                <ul class="nav nav-pills nav-stacked ">
+                    <li><a href="#TentangSaya">Tentang Saya <img src="img/User.png" alt="" style="width:20px;margin-left:57px;"></a></li>
+                    <li><a href="#Kemampuan">Kemampuan <img src="img/tools.png" alt="" style="width:20px;margin-left:62px;"></a></li>
+                    <li><a href="#Pengalaman">Pengalaman <img src="img/achieve.png" alt="" style="width:20px;margin-left:62px;"></a></li>
+                    <div style="margin-top:10px;width:200px;">
+                            <hr style="border-color: black; border-width: 2px; margin-top: 0">
+                    </div>
+                    <div style="margin-top:280px;width:200px;">
+                            <hr style="border-color: black; border-width: 0px; margin-top: 0">
+                    </div>
+                    <li class="smol"><img src="img/G+ black.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">Justin Wijaya</li>
+                    <li class="smol"><img src="img/facebook black.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">Justinus Wijaya</li>
+                    <li class="smol"><img src="img/mail.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">justin.am.wijaya@gmail.com</li>
+                    <li class="smol"><img src="img/phone.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">+6281248057578</li>
+
+                </ul>
+
+                    </div>
+            </nav>
+
+                
+                <!-- konten -->
+            <div class="col-xs-9" style="border-left: 3px solid black;">
+                <div style="padding-left:15px;width:600px;background-color:black;color:white;font-size:50px;margin-bottom:50px;">Welcome! </div>
+                <div id="TentangSaya">
+                    <h1>Tentang Saya</h1>
+                    <div style="float:left;margin: 20px;margin-right: 40px;width:200px;">
+                        <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;">
+                        <sub style="float:none;margin-left:35%;">it's kinda me</sub>
+                    </div>
+                    <br>
+                    <ul style="list-style:none;">
+                        <li>Nama: Justinus Amadia Wijaya </li>
+                        <li>Tempat, Tanggal Lahir: Bekasi, 17 Agustus 1996</li>
+                        <li>Umur: 21 Tahun</li>
+                        <li>Status: "AHEM"</li>
+                        <li>Kuliah: Binus Online Learning</li>
+                    </ul>
+                    <br><br>
+                    <h3>Lebih Tentang Saya:<br></h3>
+                    <p>
+                    
+                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.
+                        <br><br>
+                    </p>
+                    
+                    <h3>Kehidupan</h3>
+                    <p>                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.</p>
+        
+                </div>
+                
+                <div id="Kemampuan">
+                    
+                    <h1>Kemampuan</h1>
+                    <ul style="list-style: none;padding:0px;">
+                            <li>Saya</li>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete (success)</span>
+                                </div>
+                            </div>
+                            <li>Tidak Mengerti</li>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                              </div>
+                            <li>Apa</li>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete (warning)</span>
+                                    </div>
+                                </div>
+                            <li>Ini</li>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                                    <span class="sr-only">80% Complete (danger)</span>
+                                    </div>
+                                </div>
+                        </ul>
+                        <p>                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.                        Lorem Ipsum adalah contoh teks atau dummy dalam industri percetakan dan penataan huruf atau typesetting. Lorem Ipsum telah menjadi standar contoh teks sejak tahun 1500an, saat seorang tukang cetak yang tidak dikenal mengambil sebuah kumpulan teks dan mengacaknya untuk menjadi sebuah buku contoh huruf. Ia tidak hanya bertahan selama 5 abad, tapi juga telah beralih ke penataan huruf elektronik, tanpa ada perubahan apapun. Ia mulai dipopulerkan pada tahun 1960 dengan diluncurkannya lembaran-lembaran Letraset yang menggunakan kalimat-kalimat dari Lorem Ipsum, dan seiring munculnya perangkat lunak Desktop Publishing seperti Aldus PageMaker juga memiliki versi Lorem Ipsum.</p>
+
+                </div>
+                <div id="Pengalaman">
+                    <h1>Pengalaman</h1>
+                    <div class="col-sm-6 col-xs-12">
+                        <ul>
+                            <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;margin-top: 30px;">   
+                            <div class="post-content">
+                                    <h4>Lorem ipsum</h4>
+                                </div>    
+                            <li>Perusahaan 1</li>
+                            <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;margin-top: 30px;">
+                            <div class="post-content">
+                                    <h4>Lorem ipsum</h4>
+                                </div>
+                            <li>Proyek 1</li>
+                            <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;margin-top: 30px;">
+                            <div class="post-content">
+                                    <h4>Lorem ipsum</h4>
+                                </div>
+                            <li>apa lagi gitu</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 col-xs-12">
+                            <ul>
+                                <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;margin-top: 30px;">
+                                <div class="post-content">
+                                        <h4>Lorem ipsum</h4>
+                                    </div>
+                                <li>Perusahaan 2</li>
+                                <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;margin-top: 30px;">
+                                <div class="post-content">
+                                        <h4>Lorem ipsum</h4>
+                                    </div>
+                                <li>Proyek 2</li>
+                                <img class="img-responsive" src="img/profile picture.jpg" alt="" style=" border:1px solid black;margin-top: 30px;">
+                                <div class="post-content">
+                                        <h4>Lorem ipsum</h4>
+                                    </div>
+                                <li>apa lagi gitu</li>
+                            </ul>
+                    </div>
+                </div>
+        
+            </div>
+            <!-- menu -->
+            <nav class="col-xs-1 hidden-md fill" id="scrollnye"style="margin-top:25px;">
+                <div class="affix">
+                <ul class="nav nav-pills nav-stacked ">
+                    <li><a href="#TentangSaya">Tentang Saya <img src="img/User.png" alt="" style="width:20px;margin-left:57px;"></a></li>
+                    <li><a href="#Kemampuan">Kemampuan <img src="img/tools.png" alt="" style="width:20px;margin-left:62px;"></a></li>
+                    <li><a href="#Pengalaman">Pengalaman <img src="img/achieve.png" alt="" style="width:20px;margin-left:62px;"></a></li>
+                    <div style="margin-top:10px;width:200px;">
+                            <hr style="border-color: black; border-width: 2px; margin-top: 0">
+                    </div>
+                    <div style="margin-top:280px;width:200px;">
+                            <hr style="border-color: black; border-width: 0px; margin-top: 0">
+                    </div>
+                    <li class="smol"><img src="img/G+ black.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">Justin Wijaya</li>
+                    <li class="smol"><img src="img/facebook black.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">Justinus Wijaya</li>
+                    <li class="smol"><img src="img/mail.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">justin.am.wijaya@gmail.com</li>
+                    <li class="smol"><img src="img/phone.png" alt=""style="height:20px;margin:15px 5px 0px 0px;vertical-align:text-bottom">+6281248057578</li>
+
+                </ul>
+
+                    </div>
+            </nav>
+        </div>
+    </div>
+
+</body>
+</html>
